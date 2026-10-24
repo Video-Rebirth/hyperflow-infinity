@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+.ipynb_checkpoints/
+build/
+dist/
+runs/
+*.safetensors
+*.pt
+*.mp4
+*.wav
+*.log
+
+# README media: videos, images and audio under assets/ are tracked
+!assets/**
+
+.idea/
+.vscode/
+.DS_Store

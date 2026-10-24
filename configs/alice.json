@@ -1,0 +1,35 @@
+{
+  "seed_story": {
+    "inspiration": "Lewis Carroll's Alice's Adventures in Wonderland / 爱丽丝漫游仙境; a starting inspiration, not a prescribed retelling or future outline.",
+    "world": "A Victorian English riverside opening into a whimsical dreamlike world. Curious talking animals, playful changes of scale and surprising physical rules may emerge coherently through visible events. No modern objects. Wonder, wit and curiosity rather than horror.",
+    "initial_situation": "Alice is sitting beside a quiet river on a warm afternoon when an unusually dressed white rabbit catches her attention. She chooses what to do next. No later milestones, encounters or ending are prescribed.",
+    "characters": [
+      {
+        "id": "alice",
+        "name": "Alice / 爱丽丝",
+        "aliases": [
+          "Alice",
+          "爱丽丝"
+        ],
+        "identity_text": "Alice is portrayed by a real English child actress, approximately ten years old, with natural facial proportions, fair skin with subtle freckles, shoulder-length dark blonde hair held with a simple dark ribbon, a modest pale blue Victorian cotton dress, white pinafore, white stockings and practical dark shoes. Natural expressive human face and age-appropriate proportions, never an illustrated or animated character. Keep the same face, age, hair and wardrobe across segments."
+      }
+    ]
+  },
+  "visual_style": "Photorealistic live-action period fantasy photographed with real human actors on physical sets and real English countryside locations. Alice is a real child actress with natural skin texture, realistic facial proportions, individual hair strands, physically woven Victorian clothes, natural human movement and lens depth of field. Soft natural daylight, realistic shadows and tangible materials. A literary Alice in Wonderland adaptation, not an animated adaptation. No cartoon, anime, cel shading, illustration, outlines, stylized doll faces or game-render appearance. Fantasy events remain possible but are depicted as physically filmed cinematic visual effects. Family-friendly, age-appropriate costumes. No on-screen text.",
+  "director_guidance": "make the unfolding story richer and more imaginative. Alice in Wonderland is only the starting seed, not a plot to reenact. Develop fresh causal events from what the video actually shows. Across successive segments, vary the dramatic purpose: discovery, a concrete obstacle, an inventive use of an object, an encounter or interaction, a difficult choice, a reversal, or an earned payoff. These are optional possibilities, not a checklist or scheduled outline. Let curiosity, resourcefulness, wonder, relief and occasional humor coexist with danger; do not default to fear and scanning. New people, animals or environmental surprises may enter naturally when compatible with the established world; introduce new characters through the existing new_characters schema. Choose one legible, achievable action and its visible result for this short segment. Connect surprises to existing clues or consequences instead of unrelated spectacle. Develop or pay off a clue rather than repeatedly rediscovering it. If recent intentions already repeat a type of action, such as marking another root or merely preparing to stand, choose a materially different consequence; changing the ordinal number, camera angle, emotion or scene label does not create a new event. Keep spatial continuity, established identities and observed possessions. Do not claim a past action happened just because it was requested, or call an experience first when the retained history shows otherwise. Continue open-ended; do not impose a complete future outline, a forced ending, or a new genre. Output only the existing Director JSON schema, not alternative plans or commentary.",
+  "identity": {
+    "character_id": "alice",
+    "binding": "Alice is the same person as <Picture 1>. Preserve her facial identity from this image; use it as an identity reference, not as the current scene or pose."
+  },
+  "width": 1344,
+  "height": 768,
+  "seed": 30109001,
+  "max_role_attempts": 3,
+  "beat_history": 12,
+  "max_scene_segments": 8,
+  "memory_recent_events": 8,
+  "memory_compact_trigger": 22,
+  "memory_fold_count": 10,
+  "preview_every_chunks": 5,
+  "hyperflow_weights_sha256": "4d7dec1363ebcb9fd63117621b65f8bd19fecacf7ba41f38dd098be363d3972d"
+}

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperflow-infinity"
+version = "0.1.0"
+description = "Open-ended audio-video generation with MiniMax-H3, HyperFlow and a Qwen3-VL Scene Graph memory"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+keywords = ["video-generation", "audio-video", "diffusion", "MiniMax-H3", "HyperFlow", "Qwen3-VL", "long-form"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+# Runtime deps that make the CLI importable. torch, diffusers, transformers and the H3 package are
+# pinned in requirements.txt because the right wheel depends on your CUDA version.
+dependencies = ["av>=17", "Pillow>=10", "numpy>=1.26", "safetensors>=0.4"]
+
+[project.optional-dependencies]
+# `--vlm-provider openrouter` with an image-only model samples frames with Qwen's own utilities.
+openrouter = ["qwen-vl-utils>=0.0.14"]
+
+[project.scripts]
+hyperflow-infinity = "hyperflow_infinity.cli:main"
+hyperflow-infinity-qwen = "hyperflow_infinity.qwen_service:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+# F: real errors (undefined names, unused imports). I: import order. E/W without the line-length rule;
+# a few prompt strings and HTML lines are deliberately long.
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

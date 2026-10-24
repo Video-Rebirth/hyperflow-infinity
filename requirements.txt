@@ -1,0 +1,16 @@
+# The environment every number in the README was measured with (Python 3.10, CUDA 12.9 wheels).
+torch==2.11.0
+torchvision==0.26.0
+diffusers==0.40.0
+transformers==5.15.0
+accelerate==1.14.0
+peft==0.18.1
+torchcodec==0.11.1
+av==17.1.0
+Pillow==12.3.0
+numpy==2.2.6
+safetensors==0.8.0
+hyperflow-h3 @ git+https://github.com/Video-Rebirth/hyperflow.git@1dd2f342aba5ab51da02b62885939655e8e268da
+
+# Only for `--vlm-provider openrouter` with an image-only model: samples frames the way Qwen3-VL does.
+qwen-vl-utils==0.0.14
